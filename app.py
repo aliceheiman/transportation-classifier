@@ -12,11 +12,11 @@ def classify_img(data):
 
 
 ## STREAMLIT
-st.title("Berry Classifier! 🍓")
+st.title("Mode of Transportation Classifier! 🚴‍♀️🛹🛼")
 bytes_data = None
 
 
-uploaded_image = st.file_uploader("Choose your berry:")
+uploaded_image = st.file_uploader("Choose an image of a mode of transportation (e.g. bike, rollerskates, bus):")
 if uploaded_image:
     bytes_data = uploaded_image.getvalue()
 
