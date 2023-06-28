@@ -12,7 +12,9 @@ def classify_img(data):
 
 
 ## STREAMLIT
-st.title("Mode of Transportation Classifier! 🚴‍♀️🛹🛼")
+st.title("Transportation Classifier! 🚴‍♀️🛹🛼")
+st.markdown("This is a machine learning model capable of classifying images of different modes of transportation, for example bikes, rollerskates, trains,  and boats. The model leverages transfer learning and was fine tuned on the Resnet34 neural network. Feel free to experiment!")
+
 bytes_data = None
 
 
