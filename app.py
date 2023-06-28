@@ -19,13 +19,16 @@ bytes_data = None
 
 
 uploaded_image = st.file_uploader("Choose an image of a mode of transportation (e.g. bike, rollerskates, bus):")
+
+
 if uploaded_image:
     bytes_data = uploaded_image.getvalue()
-
-    st.image(bytes_data, caption="Uploaded image")   
-
+ 
 if bytes_data:
     classify = st.button("CLASSIFY!")
+
+    st.image(bytes_data, caption="Uploaded image")  
+
     if classify:
         label, confidence = classify_img(bytes_data)
 
