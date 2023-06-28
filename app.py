@@ -27,9 +27,9 @@ if uploaded_image:
 if bytes_data:
     classify = st.button("CLASSIFY!")
 
-    st.image(bytes_data, caption="Uploaded image")  
-
     if classify:
         label, confidence = classify_img(bytes_data)
 
-        st.write(f"It is a {label}! ({confidence:.04f})")
+        st.markdown(f"**It is a {label}! ({confidence:.04f})**")  
+
+    st.image(bytes_data, caption="Uploaded image")  
